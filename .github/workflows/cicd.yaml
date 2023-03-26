@@ -20,4 +20,4 @@ jobs:
                   file: ./Dockerfile
                   push: true
                   tags: ghcr.io/Duckfish2002/webinar:latest
-                
+                  

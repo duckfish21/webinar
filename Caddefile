@@ -1,0 +1,7 @@
+# Path: Caddyfile
+# caddyfile config
+
+:80 {
+    root * /usr/share/caddy
+    file_server
+}

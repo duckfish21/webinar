@@ -14,7 +14,7 @@ jobs:
         - Name: Checkout
           uses: actions/checkout@v2
         - Name: Build and Push Docker Image
-            uses: docker/build-push-action@v1
+            uses: docker/build-push-action@v2
             with:
             context: .
             file: ./Dockerfile

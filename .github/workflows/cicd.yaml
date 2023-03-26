@@ -10,13 +10,11 @@ on:
 jobs:
     build:
         runs-on: ubuntu-latest
-          steps:
-          - name: Checkout
+         steps: - name: Checkout
               uses: actions/checkout@v2
           - name: Build and Push Docker Image
               uses: docker/build-push-action@v2
-              with:
-                  context: .
+              with: context: .
                   file: ./Dockerfile
                   push: true
                   tags: ghcr.io/Duckfish2002/webinar:latest

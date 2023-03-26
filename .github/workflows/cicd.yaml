@@ -21,6 +21,3 @@ jobs:
           push: true
           tags: ghcr.io/duckfish21/webinar:latest
 
-permissions:
-  contents: read
-  packages: write

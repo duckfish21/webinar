@@ -1,4 +1,4 @@
-# job build image and push to ghrc.io
+# job build image and push to ghcr.io
 note: Build and Push Docker Image
 on:
     push:

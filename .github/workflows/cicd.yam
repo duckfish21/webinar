@@ -1,0 +1,22 @@
+# job build image and push to ghrc.io
+note: Build and Push Docker Image
+on:
+    push:
+        branches:
+        - master
+    pull_request:
+        branches:
+        - master
+jobs:
+    build:
+        runs-on: ubuntu-latest
+        steps:
+        - Name: Checkout
+          uses: actions/checkout@v2
+        - Name: Build and Push Docker Image
+            uses: docker/build-push-action@v1
+            with:
+            context: .
+            file: ./Dockerfile
+            push: true
+            tags: ghcr.io/Duckfish2002/webinar:latest

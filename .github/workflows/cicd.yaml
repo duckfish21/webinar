@@ -1,5 +1,5 @@
 # job build image and push to ghcr.io
-note: Build and Push Docker Image
+name: Build and Push Docker Image
 on:
     push:
         branches:

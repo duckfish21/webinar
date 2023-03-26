@@ -16,7 +16,8 @@ jobs:
         - Name: Build and Push Docker Image
             uses: docker/build-push-action@v2
             with:
-            context: .
-            file: ./Dockerfile
-            push: true
-            tags: ghcr.io/Duckfish2002/webinar:latest
+                context: .
+                file: ./Dockerfile
+                push: true
+                tags: ghcr.io/Duckfish2002/webinar:latest
+                

@@ -20,3 +20,4 @@ jobs:
           file: ./Dockerfile
           push: true
           tags: ghcr.io/duckfish21/webinar:latest
+permissions: read-all|write-all

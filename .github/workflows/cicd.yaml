@@ -25,5 +25,5 @@ jobs:
           context: .
           file: ./Dockerfile
           push: true
-          tags: ghcr.io/duckfish21/webinar:latest
+          tags: ghcr.io/${{github.repository}}::${{ github.sha }}
 

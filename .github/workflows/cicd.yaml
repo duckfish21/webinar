@@ -1,32 +1,4 @@
 # cicd job build docker image and push to ghcr.io
-name: Build and push docker image
-on:
-  push:
-    branches:
-      - master
-  pull_request:
-     branches:
-       - master
-  build:
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout
-        uses: actions/checkout@v2
-      - name: Login to GitHub Container Registry
-        uses: docker/login-action@v1
-        with:
-          registry: ghcr.io
-          username: ${{ github.repository_owner }}
-          password: ${{ secrets.GITHUB_TOKEN }}
-      - name: Build and push docker image
-        uses: docker/build-push-action@v2
-        with:
-          context: .
-          file: ./Dockerfile
-          push: true
-          tags: ghcr.io/${{github.repository}}:${{ github.sha }}
-
-# cicd job build docker image and push to ghcr.io
 name: cicd
 
 on:

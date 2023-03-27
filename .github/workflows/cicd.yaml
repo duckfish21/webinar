@@ -3,11 +3,10 @@ name: Build and push docker image
 on:
   push:
     branches:
-      - main
+      - master
   pull_request:
      branches:
-       - main
-jobs:
+       - master
   build:
     runs-on: ubuntu-latest
     steps:
